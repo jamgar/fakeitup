@@ -1,0 +1,17 @@
+<%= turbo_frame_tag "fake_set_type_#{form.index}" do %>
+  <h4>Fake Set Types</h4>
+  <%= form.hidden_field :id %>
+  <%= form.hidden_field :name %> 
+
+  <%= form.label :name,
+    class: "btn flex justify-between items-center",
+    data: { action: "click->list#openList" }, onclick: "my_modal_types.showModal()" do %>
+    <%= form.object.name || "Click to choose a type" %> 
+  <% end %>
+  <%= form.submit "destroy type",
+        formaction: fake_set_type_path(form.index, form.object.id),
+        formmethod: :delete,
+        formnovalidate: true,
+        data: { turbo_frame: "fake_set_type_#{form.index}" },
+        class: "btn btn-sm btn-error mt-2" %>
+<% end %>

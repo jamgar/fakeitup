@@ -1,0 +1,36 @@
+<%= form_with(model: fake_set) do |form| %>
+  <% if fake_set.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(fake_set.errors.count, "error") %> prohibited this fake set from being saved:</h2>
+
+      <ul>
+        <% fake_set.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-control w-full max-w-xs my-4">
+    <%= form.label :name, class: "label-text"  %>
+    <%= form.text_field :name, placeholder: "", required: true, class: "input input-bordered w-full max-w-xs" %>
+  </div>
+
+  <div id="set-types" class="form-control w-full max-w-xs my-4">
+    <%= form.fields_for :fake_set_types do |type_form| %>
+      <%= render "fake_set_types/form", form: type_form %>
+    <% end %>
+  </div>
+
+  <div class="my-4 max-w-xs">
+    <%= form.submit "+ Add fake set type",
+          formaction: fake_set_type_path(@fake_set.fake_set_types.size),
+          formmethod: :post,
+          formnovalidate: true,
+          id: "add-fake-set-type",
+          class: "btn btn-sm" %>
+  </div>
+  <%= form.submit nil, class: "btn btn-primary" %>
+
+<% end %>
+

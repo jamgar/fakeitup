@@ -1,0 +1,16 @@
+<%= fields model: @fake_set do |form| %>
+  <%= form.fields_for :fake_set_types, child_index: params[:index] do |type_form| %>
+    <%= turbo_stream.replace "add-fake-set-type" do %>
+      <%= form.submit "+ Add fake set type",
+            formaction: fake_set_type_path(type_form.index.to_i + 1),
+            formmethod: :post,
+            formnovalidate: true,
+            id: "add-fake-set-type",
+            class: "btn btn-sm" %>
+    <% end %>
+    
+    <%= turbo_stream.append "set-types" do %>
+      <%= render "form", form: type_form %>
+    <% end %>
+  <% end %>
+<% end %>

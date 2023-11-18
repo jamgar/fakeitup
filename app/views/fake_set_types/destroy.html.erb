@@ -1,0 +1,8 @@
+<%= fields model: @fake_set do |form| %>
+  <%= form.fields_for :fake_set_types, child_index: params[:index] do |type_form| %>
+    <%= turbo_frame_tag "fake_set_type_#{type_form.index}" do %>
+      <%= type_form.hidden_field :id, value: params[:id] %>
+      <%= type_form.hidden_field :_destroy, value: true %>
+    <% end %>
+  <% end %>
+<% end %>
