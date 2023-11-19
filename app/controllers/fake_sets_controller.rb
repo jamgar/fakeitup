@@ -32,7 +32,7 @@ class FakeSetsController < ApplicationController
   def update
     respond_to do |format|
       if @fake_set.update(fake_set_params)
-        format.html { redirect_to fake_set_url(@fake_set), 
+        format.html { redirect_to fake_sets_path, 
                       notice: "Fake set successfully updated."}
       else
         format.html { render :edit, status: :unprocessable_entity } 

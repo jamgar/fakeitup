@@ -15,7 +15,7 @@
     <%= form.label :name, class: "label-text"  %>
     <%= form.text_field :name, placeholder: "", required: true, class: "input input-bordered w-full max-w-xs" %>
   </div>
-
+  <div class="divider"></div>
   <div id="set-types" class="form-control w-full max-w-xs my-4">
     <%= form.fields_for :fake_set_types do |type_form| %>
       <%= render "fake_set_types/form", form: type_form %>
@@ -28,9 +28,9 @@
           formmethod: :post,
           formnovalidate: true,
           id: "add-fake-set-type",
-          class: "btn btn-sm" %>
+          class: "btn btn-outline btn-sm rounded" %>
   </div>
-  <%= form.submit nil, class: "btn btn-primary" %>
+  <%= form.submit nil, class: "btn btn-primary rounded" %>
 
 <% end %>
 

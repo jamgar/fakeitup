@@ -1,21 +1,25 @@
-<h1>My Fake Sets</h1>
-<%= link_to "+ New Fake Set", new_fake_set_path, class: "btn btn-primary btn-sm" %>
+<div class="mx-10">
+  <h1>My Fake Sets</h1>
+  <%= link_to "+ New Fake Set",
+    new_fake_set_path,
+    class: "btn btn-primary btn-sm rounded mt-2" %>
 
-<div class="overflow-x-auto my-4">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @fake_sets.each do |set| %>
-      <tr>
-        <th><%= link_to set.name, edit_fake_set_path(set) %></th>
-        <th><%= button_to "Delete", fake_set_path(set), method: :delete, form: { data: { turbo_confirm: "Are you sure?" } }, class: "link link-error no-underline" %></th>
-      </tr>
-      <% end %>
-    </tbody>
-  </table>
+  <div class="overflow-x-auto my-4">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @fake_sets.each do |set| %>
+        <tr>
+          <th><%= link_to set.name, edit_fake_set_path(set) %></th>
+          <th><%= button_to "Delete", fake_set_path(set), method: :delete, form: { data: { turbo_confirm: "Are you sure?" } }, class: "link link-error no-underline" %></th>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
 </div>
