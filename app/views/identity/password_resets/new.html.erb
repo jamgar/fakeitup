@@ -1,0 +1,27 @@
+<div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-lg">
+
+    <p style="color: red"><%= alert %></p>
+
+    <p class="text-center text-lg font-medium">Forgot your password?</p>
+
+    <%= form_with(url: identity_password_reset_path, class: "mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8") do |form| %>
+      <div>
+        <%= form.label :email, class: "sr-only" %>
+        <div class="relative">
+          <%= form.email_field :email,
+            required: true,
+            autofocus: true,
+            class: "w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm",
+            placeholder: "Enter email"  %>
+        </div>
+      </div>
+
+      <div>
+        <%= form.submit "Send password reset email",
+        class: "block w-full rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white"%>
+      </div>
+    <% end %>
+  </div>
+</div>
+

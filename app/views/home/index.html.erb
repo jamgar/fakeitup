@@ -1,0 +1,27 @@
+<div class="prose mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-lg">
+    <p style="color: green"><%= notice %></p>
+
+    <p>Signed as <%= Current.user.email %></p>
+
+    <h2>Login and verification</h2>
+
+    <div>
+      <%= link_to "Change password", edit_password_path, class: "btn btn-sm no-underline mb-2" %>
+    </div>
+
+    <div>
+      <%= link_to "Change email address", edit_identity_email_path, class: "btn btn-sm no-underline" %>
+    </div>
+
+    <h2>Access history</h2>
+
+    <div>
+      <%= link_to "Devices & Sessions", sessions_path, class: "btn btn-sm no-underline" %>
+    </div>
+
+    <br>
+
+    <%= button_to "Log out", Current.session, method: :delete, class: "btn btn-sm btn-success" %>
+  </div>
+</div>

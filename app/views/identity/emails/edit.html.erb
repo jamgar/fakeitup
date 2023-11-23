@@ -1,0 +1,57 @@
+<div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-lg">
+
+    <% if Current.user.verified? %>
+      <p class="text-center text-lg font-medium">Change your email</p>
+    <% else %>
+      <p class="text-center text-lg font-medium">Verify your email</p>
+      <p>We sent a verification email to the address below. Check that email and follow those instructions to confirm it's your email address.</p>
+      <p><%= button_to "Re-send verification email", identity_email_verification_path %></p>
+    <% end %>
+
+    <%= form_with(url: identity_email_path,
+                  method: :patch,
+                  class: "mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8") do |form| %>
+      <% if @user.errors.any? %>
+        <div style="color: red">
+          <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+          <ul>
+            <% @user.errors.each do |error| %>
+              <li><%= error.full_message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div>
+        <%= form.label :email, class: "sr-only" %>
+        <%= form.email_field :email,
+          required: true,
+          autocomplete: "email",
+          class: "w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm",
+          placeholder: "Enter email"  %>
+      </div>
+
+      <div>
+        <%= form.label :password, "Password challenge", class: "sr-only" %>
+        <%= form.password_field :password_challenge,
+          required: true,
+          autocomplete: "current-password",
+          class: "w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm",
+          placeholder: "Enter password" %>
+      </div>
+
+      <div>
+        <%= form.submit "Save changes",
+          class: "block w-full rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white"%>
+      </div>
+    <% end %>
+
+    <br>
+
+    <div>
+      <%= link_to "←Back", root_path %>
+    </div>
+  </div>
+</div>
