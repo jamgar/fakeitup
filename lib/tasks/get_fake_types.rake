@@ -18,7 +18,9 @@ namespace :custom do
 
     File.open("faker_types.json", "w") do |f|
       data = {}
+      progress = ""
       types.each do |type|
+        p progress += "#"
         type_name = type.to_s.split("::").last
         sub_types = type.singleton_methods(false)
         if !sub_types.empty?
@@ -27,6 +29,8 @@ namespace :custom do
       end
       f.write data.to_json
     end
+
+    # NOTE run db:seed to ingest the json
   end
 end
 
