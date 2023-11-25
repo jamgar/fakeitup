@@ -1,11 +1,10 @@
 <%= turbo_frame_tag "fake_set_type_#{form.index}" do %>
-  <h4 class="my-4">Fake Set Types</h4>
   <%= form.hidden_field :id %>
   <%= form.hidden_field :name %> 
 
-  <div class="flex gap-2">
+  <div class="flex gap-2 mb-4 w-full">
     <%= form.label :name,
-      class: "btn rounded flex justify-between items-center",
+      class: "btn rounded flex justify-between items-center w-64 sm:w-96 overflow-x-auto",
       data: { action: "click->list#openList" }, onclick: "my_modal_types.showModal()" do %>
       <%= form.object.name || "Click to choose a type" %> 
     <% end %>

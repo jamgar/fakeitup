@@ -6,6 +6,3 @@ import { application } from "./application"
 
 import ListController from "./list_controller"
 application.register("list", ListController)
-
-import ModalController from "./modal_controller"
-application.register("modal", ModalController)

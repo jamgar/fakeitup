@@ -18,7 +18,7 @@
             <% type.sub_types.each do |stype| %>
               <dd
                 class="bg-base-200 rounded-sm hover:bg-base-300 hover:cursor-pointer hover:font-medium"
-                id="<%= stype %>"
+                id='<%= "#{type.name}-#{stype}" %>'
                 data-action="click->list#selectType">
                 <%= stype.titleize %>
               </dd>
