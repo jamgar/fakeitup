@@ -14,12 +14,12 @@
       <% types_list.each do |type| %>
         <div>
           <dl>
-            <dt><%= type.name %></dt>
-            <% type.sub_types.each do |stype| %>
+            <dt><%= type.parent %></dt>
+            <% type.type_generators.each do |stype| %>
               <dd
                 class="bg-base-200 rounded-sm hover:bg-base-300 hover:cursor-pointer hover:font-medium"
-                id='<%= "#{type.name}-#{stype}" %>'
-                data-action="click->list#selectType">
+                id='<%= "#{type.parent}-#{stype}" %>'
+                data-action="click->list#selectType click->form#submitForm">
                 <%= stype.titleize %>
               </dd>
             <% end %>

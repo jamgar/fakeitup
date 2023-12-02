@@ -13,6 +13,6 @@
 file = JSON.parse(File.read('faker_types.json'))
 TypesList.destroy_all
 file.each do |key, value| 
-  TypesList.create!(name: key, sub_types: value)
+  TypesList.create!(parent: key, type_generators: value)
 end
 

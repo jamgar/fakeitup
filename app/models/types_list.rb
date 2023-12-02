@@ -1,3 +1,3 @@
 class TypesList < ApplicationRecord
-  serialize :sub_types, coder: JSON
+  serialize :type_generators, coder: JSON
 end

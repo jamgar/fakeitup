@@ -1,4 +1,4 @@
-<%= form_with(model: fake_set) do |form| %>
+<%= form_with(model: fake_set, data: { form_target: "form" }) do |form| %>
   <% if fake_set.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(fake_set.errors.count, "error") %> prohibited this fake set from being saved:</h2>

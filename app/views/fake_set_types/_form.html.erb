@@ -1,12 +1,13 @@
-<%= turbo_frame_tag "fake_set_type_#{form.index}" do %>
+<%= turbo_frame_tag "fake_set_fake_set_types_attributes_#{form.index}" do %>
   <%= form.hidden_field :id %>
-  <%= form.hidden_field :name %> 
+  <%= form.hidden_field :parent %> 
+  <%= form.hidden_field :type_generator %> 
 
   <div class="flex gap-2 mb-4 w-full">
-    <%= form.label :name,
+    <%= form.label :type_generator,
       class: "btn rounded flex justify-between items-center w-64 sm:w-96 overflow-x-auto",
-      data: { action: "click->list#openList" }, onclick: "my_modal_types.showModal()" do %>
-      <%= form.object.name || "Click to choose a type" %> 
+      data: { action: "click->list#setFields", label_target: "fake_set_fake_set_types_attributes_#{form.index}" }, onclick: "my_modal_types.showModal()" do %>
+      <%= form.object.type_generator ? "#{form.object.parent}: #{form.object.type_generator}" : "Click to choose a type" %> 
     <% end %>
     <%= form.submit "X",
           formaction: fake_set_type_path(form.index, form.object.id),

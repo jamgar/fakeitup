@@ -12,7 +12,8 @@
 
 ActiveRecord::Schema[7.1].define(version: 2023_11_19_152756) do
   create_table "fake_set_types", force: :cascade do |t|
-    t.string "name"
+    t.string "parent"
+    t.string "type_generator"
     t.integer "position"
     t.integer "fake_set_id", null: false
     t.datetime "created_at", null: false
@@ -36,8 +37,8 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_19_152756) do
   end
 
   create_table "types_lists", force: :cascade do |t|
-    t.string "name"
-    t.text "sub_types"
+    t.string "parent"
+    t.text "type_generators"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -5,9 +5,17 @@
     fake_sets_path, 
     class: "btn btn-sm rounded not-prose mt-2" %>
 
-  <div data-controller="list modal">
+  <div data-controller="list modal form">
     <%= render 'form', fake_set: @fake_set %>
     <%= render 'types_lists/list', types_list: @types_list %>
   </div>
+
+  <div class="divider"></div>
+
+<!-- The <pre> needs to be formatted all the way to the left to show
+  properly in the UI -->
+<pre>
+<%= show_json_here(@fake_set) %>
+</pre>
 </div>
 

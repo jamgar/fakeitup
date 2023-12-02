@@ -31,6 +31,10 @@ namespace :custom do
     end
 
     # NOTE run db:seed to ingest the json
+    # NOTE will need to add a 'published' column to indicate if the subtype
+    # is shown publicly. Some subtypes require extra settings. Then will
+    # need to add a list of what subtypes are 'published' so can set to true
+    # during setup of contributers.
   end
 end
 

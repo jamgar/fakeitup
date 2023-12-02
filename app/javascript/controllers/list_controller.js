@@ -2,23 +2,16 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="list"
 export default class extends Controller {
-  openList(e) {
+  setFields(e) {
     this.targetLabel = e.target
-    this.targetName = document.getElementById(e.target.htmlFor)
-    // this.targetElement.classList.remove("hidden") 
+    this.targetType = document.getElementById(e.target.htmlFor)
+    this.targetParent = document.getElementById(`${e.target.dataset.labelTarget}_parent`)
   }
 
   selectType(e) {
-    const id = e.target.id
-    this.targetLabel.innerHTML = id
-    this.targetName.value = id
-  }
-
-  closeList() {
-    // this.targetElement.classList.add("hidden") 
-  }
-
-  get targetElement() {
-    return document.getElementById("types-list")
+    const id = e.target.id.split("-")
+    this.targetLabel.innerHTML = id.join(": ")
+    this.targetType.value = id.pop() // to get the last item 
+    this.targetParent.value = id[0] 
   }
 }
