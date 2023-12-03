@@ -4,8 +4,14 @@
 
 import { application } from "./application"
 
+import ClipboardController from "./clipboard_controller"
+application.register("clipboard", ClipboardController)
+
 import FormController from "./form_controller"
 application.register("form", FormController)
 
 import ListController from "./list_controller"
 application.register("list", ListController)
+
+import PresenterController from "./presenter_controller"
+application.register("presenter", PresenterController)
