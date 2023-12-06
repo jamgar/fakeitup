@@ -14,7 +14,15 @@
 
 <!-- The <pre> needs to be formatted all the way to the left to show
   properly in the UI -->
-<div class="my-2" data-controller="clipboard">
+
+
+<div class="my-2" data-controller="clipboard presenter"
+     data-presenter-json-value="<%= get_fake_json(@fake_set) %>"
+     data-presenter-csv-value="<%= get_fake_csv(@fake_set) %>">
+  <div role="tablist" class="not-prose tabs tabs-bordered">
+    <a role="tab" class="tab tab-active" data-action="click->presenter#showJson">JSON</a>
+    <a role="tab" class="tab" data-action="click->presenter#showCsv">CSV</a>
+  </div>
   <div class="flex w-full justify-end my-2">
     <span class="hidden text-sm bg-success rounded px-2" data-clipboard-target="tooltip">Copied!</span>
     <button class="" data-action="clipboard#copy">
@@ -24,11 +32,8 @@
     </button>
   </div>
 <pre class="mt-0"
-     data-controller="presenter"
-     data-presenter-json-value="<%= get_fake_json(@fake_set) %>"
      data-presenter-target="show"
      data-clipboard-target="source">
 </pre>
   </div>
 </div>
-

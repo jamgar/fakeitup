@@ -1,4 +1,6 @@
 module ApplicationHelper
+  require 'csv'
+
   def get_fake_json(fake_set)
     arr = []
     (0..10).each do |x|
@@ -7,6 +9,21 @@ module ApplicationHelper
       end
       arr << set_hash
     end
-    arr.to_json
+    # arr.to_json
+    JSON.pretty_generate(arr)
+  end
+
+  def get_fake_csv(fake_set) 
+    headers = fake_set.fake_set_types.pluck(:type_generator)
+   CSV.generate do |csv|
+     csv << headers
+    (0..10).each do |x|
+      values = []
+     fake_set.fake_set_types.each do |set|
+       values << "Faker::#{set.parent}".camelize.constantize.send(set.type_generator)
+     end
+     csv << values 
+    end
+   end
   end
 end
