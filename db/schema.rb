@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_11_19_152756) do
+ActiveRecord::Schema[7.1].define(version: 2023_12_09_142704) do
   create_table "fake_set_types", force: :cascade do |t|
     t.string "parent"
     t.string "type_generator"
@@ -41,6 +41,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_19_152756) do
     t.text "type_generators"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "published", default: false
   end
 
   create_table "users", force: :cascade do |t|

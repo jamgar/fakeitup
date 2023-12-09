@@ -6,15 +6,6 @@ namespace :custom do
 
   task :get_types do
     types = Faker.constants.sort.map(&Faker.method(:const_get)).select { |constant| constant.is_a? Class }
-    # File.open("faker_types.txt", "w") do |f|
-    #   types.each_with_index do |type, index|
-    #     type_name = type.to_s.split("::").last
-    #     sub_types = type.singleton_methods(false)
-    #     if !sub_types.empty?
-    #       f.write "#{type_name}, #{sub_types}\n"
-    #     end
-    #   end
-    # end
 
     File.open("faker_types.json", "w") do |f|
       data = {}
@@ -23,15 +14,23 @@ namespace :custom do
         p progress += "#"
         type_name = type.to_s.split("::").last
         sub_types = type.singleton_methods(false)
-        if !sub_types.empty?
-          data[type_name] = sub_types
+        if !sub_types.empty? && type_name != "Base"
+          data[type_name] = { "types": sub_types, "published": false }
         end
       end
       f.write data.to_json
     end
 
+    # {
+    #   "Address": 
+    #   {
+    #     "types": ["street"],
+    #     "published": "false"
+    #   }
+    # }
+
     # NOTE run db:seed to ingest the json
-    # NOTE will need to add a 'published' column to indicate if the subtype
+    # NOTE added a 'published' column to indicate if the subtype
     # is shown publicly. Some subtypes require extra settings. Then will
     # need to add a list of what subtypes are 'published' so can set to true
     # during setup of contributers.

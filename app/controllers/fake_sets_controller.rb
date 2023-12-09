@@ -58,7 +58,7 @@ class FakeSetsController < ApplicationController
   end
 
   def set_types_list
-    @types_list = TypesList.all
+    @types_list = TypesList.where(published: true)
   end
 
   def fake_set_params

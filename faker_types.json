@@ -1,1 +1,3629 @@
-{"Address":["street_name","street_address","secondary_address","zip","building_number","community","mail_box","zip_code","postcode","street_suffix","city_suffix","city","city_prefix","state_abbr","country","country_name_to_code","country_by_code","longitude","country_code_long","latitude","full_address_as_hash","full_address","time_zone","state","country_code"],"Adjective":["positive","negative"],"Alphanumeric":["alphanumeric","alpha"],"Ancient":["god","primordial","titan","hero"],"App":["semantic_version","name","version","author"],"Appliance":["brand","equipment"],"Artist":["name"],"Australia":["location","animal","state"],"Avatar":["image"],"Bank":["name","account_number","iban","iban_country_code","routing_number","routing_number_with_format","swift_bic","bsb_number"],"Barcode":["ean","ean_with_composite_symbology","upc_a","upc_e","upc_a_with_composite_symbology","upc_e_with_composite_symbology","isbn","ismn","issn"],"Base":["flexible_key","numerify","fetch","generate","letterify","translate","bothify","with_locale","regexify","fetch_all","rand","method_missing","parse","flexible","disable_enforce_available_locales","rand_in_range","resolve","unique","sample","respond_to_missing?","shuffle"],"Beer":["style","name","ibu","malts","blg","alcohol","hop","yeast"],"Blood":["group","rh_factor","type"],"Book":["title","publisher","genre","author"],"Boolean":["boolean"],"BossaNova":["artist","song"],"Business":["credit_card_number","credit_card_expiry_date","credit_card_type"],"Camera":["brand_with_model","model","brand"],"Cannabis":["strain","cannabinoid_abbreviation","cannabinoid","terpene","medical_use","health_benefit","buzzword","brand","category","type"],"ChileRut":["dv","last_rut","rut","full_rut","check_digit"],"ChuckNorris":["fact"],"Code":["ean","npi","isbn","asin","nric","sin","imei","rut"],"Coffee":["variety","notes","intensifier","blend_name","origin"],"Coin":["flip","name"],"Color":["hex_color","hsl_color","color_name","single_rgb_color","rgb_color","hsla_color"],"Commerce":["promotion_code","department","product_name","material","price","color","brand","vendor"],"Company":["department","industry","catch_phrase","bs","ein","duns_number","logo","profession","spanish_organisation_number","suffix","type","swedish_organisation_number","czech_organisation_number","french_siren_number","french_siret_number","name","norwegian_organisation_number","australian_business_number","polish_taxpayer_identification_number","polish_register_of_national_economy","south_african_pty_ltd_registration_number","south_african_close_corporation_registration_number","south_african_listed_company_registration_number","south_african_trust_registration_number","brazilian_company_number","russian_tax_number","sic_code","buzzword","indian_gst_number"],"Compass":["abbreviation","direction","cardinal","half_wind","quarter_wind","azimuth","cardinal_abbreviation","ordinal_abbreviation","half_wind_abbreviation","quarter_wind_abbreviation","cardinal_azimuth","ordinal_azimuth","half_wind_azimuth","quarter_wind_azimuth","ordinal"],"Computer":["platform","type","os","stack"],"Construction":["material","heavy_equipment","trade","subcontract_category","standard_cost_code","role"],"Cosmere":["herald","shard_world","spren","shard","surge","knight_radiant","metal","allomancer","feruchemist","aon"],"Crypto":["sha1","md5","sha256","sha512"],"CryptoCoin":["acronym","coin_name","coin_array","url_logo","coin_hash"],"Currency":["name","symbol","code"],"Date":["between","between_except","backward","birthday","in_date_period","on_day_of_week_between","forward"],"DcComics":["name","heroine","villain","hero","title"],"Demographic":["educational_attainment","demonym","marital_status","sex","height","race"],"Dessert":["variety","topping","flavor"],"Device":["platform","version","build_number","manufacturer","model_name","serial"],"DrivingLicence":["british_driving_licence","northern_irish_driving_licence","uk_driving_licence","usa_driving_licence"],"Drone":["battery_voltage","battery_type","battery_weight","charging_temperature","max_charging_power","iso","max_resolution","photo_format","video_format","shutter_speed_range","max_shutter_speed","min_shutter_speed","name","weight","max_ascent_speed","max_descent_speed","flight_time","max_altitude","max_flight_distance","max_speed","max_wind_resistance","max_angular_velocity","max_tilt_angle","operating_temperature","battery_capacity"],"Educator":["subject","course_name","secondary_school","primary_school","campus","degree","university","course"],"ElectricalComponents":["active","passive","electromechanical"],"Emotion":["noun","adjective"],"Esport":["event","player","team","league","game"],"File":["file_name","mime_type","dir","extension"],"Finance":["ticker","credit_card","stock_market","condominium_fiscal_code","vat_number","vat_number_keys"],"Food":["dish","ingredient","fruits","vegetables","description","spice","measurement","metric_measurement","ethnic_category","allergen"],"FunnyName":["name_with_initial","name","two_word_name","three_word_name","four_word_name"],"Game":["genre","platform","title"],"Gender":["short_binary_type","binary_type","type"],"GreekPhilosophers":["quote","name"],"HTML":["heading","link","emphasis","ordered_list","unordered_list","paragraph","table","element","sandwich","code","script","random"],"Hacker":["verb","say_something_smart","ingverb","abbreviation","noun","adjective","phrases"],"Hipster":["word","paragraph_by_chars","sentence","sentences","paragraphs","words","paragraph"],"Hobby":["activity"],"House":["furniture","room"],"IDNumber":["spanish_foreign_citizen_number","valid","valid_south_african_id_number","invalid","south_african_id_number","invalid_south_african_id_number","brazilian_citizen_number","brazilian_cpf","brazilian_id","brazilian_rg","chilean_id","croatian_id","danish_id_number","french_insee_number","ssn_valid","spanish_citizen_number"],"IndustrySegments":["industry","super_sector","sector","sub_sector"],"Internet":["domain_word","domain_suffix","mac_address","ip_v4_address","private_ip_v4_address","public_ip_v4_address","reserved_net_checker","private_nets_regex","username","email","reserved_nets_regex","ip_v4_cidr","ip_v6_address","ip_v6_cidr","private_net_checker","device_token","user_agent","bot_user_agent","user","_deprecated_free_email","_deprecated_safe_email","fix_umlauts","url","base64","slug","uuid","password","domain_name","user_name","free_email","safe_email"],"Invoice":["reference","amount_between","creditor_reference"],"Job":["title","position","key_skill","field"],"Json":["add_depth_to_json","shallow_json"],"Kpop":["i_groups","ii_groups","iii_groups","girl_groups","boy_bands","solo"],"Lorem":["character","paragraph_by_chars","question","sentence","word","multibyte","questions","characters","sentences","paragraphs","words","paragraph"],"LoremFlickr":["grayscale_image","pixelated_image","colorized_image","image"],"Markdown":["random","sandwich","emphasis","ordered_list","unordered_list","inline_code","block_code","table","headers"],"Marketing":["buzzwords"],"Measurement":["metric_volume","weight","metric_weight","height","length","volume","metric_height","metric_length"],"Military":["army_rank","marines_rank","navy_rank","air_force_rank","space_force_rank","coast_guard_rank","dod_paygrade"],"Mountain":["range","name"],"Movie":["quote","title"],"Music":["key_variants","chord","chord_types","key_types","band","album","genre","mambo_no_5","instrument","keys","key"],"Name":["name","last_name","initials","name_with_middle","male_first_name","first_name_men","masculine_name","female_first_name","first_name_women","feminine_name","neutral_first_name","first_name_neutral","gender_neutral_first_name","middle_name","suffix","prefix","first_name"],"Nation":["nationality","capital_city","national_sport","language","flag"],"NationalHealthService":["british_number","check_digit"],"NatoPhoneticAlphabet":["code_word"],"Number":["decimal_part","number","hexadecimal","leading_zero_number","within","decimal","between","non_zero_digit","digit","positive","negative","binary","normal"],"Omniauth":["facebook","twitter","linkedin","apple","auth0","github","google"],"PhoneNumber":["cell_phone","phone_number_with_country_code","cell_phone_with_country_code","cell_phone_in_e164","area_code","exchange_code","subscriber_number","phone_number","country_code","extension"],"Placeholdit":["image"],"ProgrammingLanguage":["name","creator"],"Quote":["famous_last_words","jack_handey","matz","most_interesting_man_in_the_world","robin","singular_siegler","yoda","fortune_cookie","mitch_hedberg"],"Relationship":["familial","in_law","spouse","parent","sibling"],"Restaurant":["name","review","type","description"],"Science":["tool","science","element_symbol","element_state","element_subcategory","scientist","modifier","element"],"Show":["kids_musical","play","adult_musical"],"SlackEmoji":["people","nature","food_and_drink","celebration","travel_and_places","objects_and_symbols","emoji","activity","custom"],"Source":["print","print_1_to_10","hello_world"],"SouthAfrica":["trust_registration_number","cell_phone","id_number","vat_number","valid_id_number","invalid_id_number","pty_ltd_registration_number","phone_number","close_corporation_registration_number","listed_company_registration_number"],"Space":["star","planet","company","moon","galaxy","nebula","star_cluster","constellation","agency","agency_abv","nasa_space_craft","distance_measurement","meteorite","launch_vehicle"],"Sport":["ancient_olympics_sport","sport","summer_olympics_sport","winter_olympics_sport","summer_paralympics_sport","winter_paralympics_sport","unusual_sport"],"String":["random"],"Stripe":["invalid_card","ccv","valid_card","month","year","valid_token"],"Subscription":["payment_term","plan","status","payment_method","subscription_term"],"Superhero":["power","name","suffix","descriptor","prefix"],"Tea":["variety","type"],"Team":["name","creature","sport","mascot","state"],"Time":["between","backward","forward","between_dates"],"Twitter":["status","screen_name","user"],"Types":["character","rb_array","rb_string","rb_integer","rb_hash","random_type","complex_rb_hash","random_complex_type"],"UniqueGenerator":["marked_unique","clear"],"University":["name","suffix","greek_organization","greek_alphabet","prefix"],"Vehicle":["door_count","mileage","kilometrage","make","license_plate","year","singapore_license_plate","standard_specs","model","version","style","color","vin","manufacture","make_and_model","transmission","drive_type","fuel_type","car_type","engine_size","car_options","engine","doors"],"Verb":["past","past_participle","simple_present","ing_form","base"],"VulnerabilityIdentifier":["cve"],"WorldCup":["stadium","roster","team","city","group"]}
+{
+  "Address": {
+    "types": [
+      "zip",
+      "latitude",
+      "longitude",
+      "street_name",
+      "street_address",
+      "secondary_address",
+      "building_number",
+      "community",
+      "mail_box",
+      "zip_code",
+      "time_zone",
+      "postcode",
+      "street_suffix",
+      "city_suffix",
+      "city",
+      "city_prefix",
+      "state_abbr",
+      "country_by_code",
+      "country_name_to_code",
+      "country_code_long",
+      "state",
+      "country_code",
+      "full_address",
+      "country",
+      "full_address_as_hash"
+    ],
+    "published": true
+  },
+  "Adjective": {
+    "types": [
+      "positive",
+      "negative"
+    ],
+    "published": false
+  },
+  "Alphanumeric": {
+    "types": [
+      "alphanumeric",
+      "alpha"
+    ],
+    "published": false
+  },
+  "Ancient": {
+    "types": [
+      "titan",
+      "hero",
+      "god",
+      "primordial"
+    ],
+    "published": false
+  },
+  "App": {
+    "types": [
+      "name",
+      "version",
+      "semantic_version",
+      "author"
+    ],
+    "published": false
+  },
+  "Appliance": {
+    "types": [
+      "brand",
+      "equipment"
+    ],
+    "published": false
+  },
+  "Artist": {
+    "types": [
+      "name"
+    ],
+    "published": false
+  },
+  "Australia": {
+    "types": [
+      "animal",
+      "location",
+      "state"
+    ],
+    "published": false
+  },
+  "Avatar": {
+    "types": [
+      "image"
+    ],
+    "published": false
+  },
+  "Bank": {
+    "types": [
+      "swift_bic",
+      "name",
+      "bsb_number",
+      "account_number",
+      "iban",
+      "iban_country_code",
+      "routing_number",
+      "routing_number_with_format"
+    ],
+    "published": false
+  },
+  "Barcode": {
+    "types": [
+      "ean",
+      "ean_with_composite_symbology",
+      "upc_a",
+      "upc_e",
+      "upc_a_with_composite_symbology",
+      "upc_e_with_composite_symbology",
+      "isbn",
+      "ismn",
+      "issn"
+    ],
+    "published": false
+  },
+  "Beer": {
+    "types": [
+      "hop",
+      "name",
+      "yeast",
+      "style",
+      "ibu",
+      "malts",
+      "blg",
+      "alcohol"
+    ],
+    "published": false
+  },
+  "Blood": {
+    "types": [
+      "rh_factor",
+      "group",
+      "type"
+    ],
+    "published": false
+  },
+  "Book": {
+    "types": [
+      "title",
+      "publisher",
+      "genre",
+      "author"
+    ],
+    "published": false
+  },
+  "Boolean": {
+    "types": [
+      "boolean"
+    ],
+    "published": false
+  },
+  "BossaNova": {
+    "types": [
+      "artist",
+      "song"
+    ],
+    "published": false
+  },
+  "Business": {
+    "types": [
+      "credit_card_number",
+      "credit_card_expiry_date",
+      "credit_card_type"
+    ],
+    "published": false
+  },
+  "Camera": {
+    "types": [
+      "brand_with_model",
+      "brand",
+      "model"
+    ],
+    "published": false
+  },
+  "Cannabis": {
+    "types": [
+      "brand",
+      "strain",
+      "cannabinoid_abbreviation",
+      "cannabinoid",
+      "terpene",
+      "medical_use",
+      "health_benefit",
+      "category",
+      "buzzword",
+      "type"
+    ],
+    "published": false
+  },
+  "ChileRut": {
+    "types": [
+      "full_rut",
+      "check_digit",
+      "dv",
+      "last_rut",
+      "rut"
+    ],
+    "published": false
+  },
+  "ChuckNorris": {
+    "types": [
+      "fact"
+    ],
+    "published": true
+  },
+  "Code": {
+    "types": [
+      "ean",
+      "sin",
+      "npi",
+      "asin",
+      "isbn",
+      "nric",
+      "imei",
+      "rut"
+    ],
+    "published": true
+  },
+  "Coffee": {
+    "types": [
+      "blend_name",
+      "origin",
+      "variety",
+      "notes",
+      "intensifier"
+    ],
+    "published": true
+  },
+  "Coin": {
+    "types": [
+      "name",
+      "flip"
+    ],
+    "published": false
+  },
+  "Color": {
+    "types": [
+      "hsla_color",
+      "hex_color",
+      "hsl_color",
+      "color_name",
+      "single_rgb_color",
+      "rgb_color"
+    ],
+    "published": false
+  },
+  "Commerce": {
+    "types": [
+      "promotion_code",
+      "department",
+      "product_name",
+      "color",
+      "material",
+      "price",
+      "brand",
+      "vendor"
+    ],
+    "published": false
+  },
+  "Company": {
+    "types": [
+      "czech_organisation_number",
+      "french_siren_number",
+      "french_siret_number",
+      "norwegian_organisation_number",
+      "australian_business_number",
+      "polish_taxpayer_identification_number",
+      "polish_register_of_national_economy",
+      "south_african_pty_ltd_registration_number",
+      "south_african_close_corporation_registration_number",
+      "south_african_listed_company_registration_number",
+      "south_african_trust_registration_number",
+      "brazilian_company_number",
+      "russian_tax_number",
+      "suffix",
+      "buzzword",
+      "indian_gst_number",
+      "type",
+      "name",
+      "sic_code",
+      "department",
+      "industry",
+      "catch_phrase",
+      "bs",
+      "ein",
+      "duns_number",
+      "logo",
+      "profession",
+      "spanish_organisation_number",
+      "swedish_organisation_number"
+    ],
+    "published": true
+  },
+  "Compass": {
+    "types": [
+      "abbreviation",
+      "direction",
+      "cardinal",
+      "half_wind",
+      "quarter_wind",
+      "azimuth",
+      "cardinal_abbreviation",
+      "ordinal_abbreviation",
+      "half_wind_abbreviation",
+      "quarter_wind_abbreviation",
+      "cardinal_azimuth",
+      "ordinal_azimuth",
+      "half_wind_azimuth",
+      "quarter_wind_azimuth",
+      "ordinal"
+    ],
+    "published": false
+  },
+  "Computer": {
+    "types": [
+      "stack",
+      "platform",
+      "type",
+      "os"
+    ],
+    "published": false
+  },
+  "Construction": {
+    "types": [
+      "role",
+      "material",
+      "heavy_equipment",
+      "trade",
+      "subcontract_category",
+      "standard_cost_code"
+    ],
+    "published": false
+  },
+  "Cosmere": {
+    "types": [
+      "feruchemist",
+      "aon",
+      "herald",
+      "shard_world",
+      "spren",
+      "shard",
+      "surge",
+      "knight_radiant",
+      "metal",
+      "allomancer"
+    ],
+    "published": false
+  },
+  "Crypto": {
+    "types": [
+      "sha256",
+      "sha512",
+      "sha1",
+      "md5"
+    ],
+    "published": false
+  },
+  "CryptoCoin": {
+    "types": [
+      "coin_array",
+      "url_logo",
+      "coin_hash",
+      "coin_name",
+      "acronym"
+    ],
+    "published": false
+  },
+  "Currency": {
+    "types": [
+      "name",
+      "symbol",
+      "code"
+    ],
+    "published": false
+  },
+  "Date": {
+    "types": [
+      "between_except",
+      "forward",
+      "between",
+      "backward",
+      "birthday",
+      "in_date_period",
+      "on_day_of_week_between"
+    ],
+    "published": false
+  },
+  "DcComics": {
+    "types": [
+      "villain",
+      "hero",
+      "name",
+      "title",
+      "heroine"
+    ],
+    "published": false
+  },
+  "Demographic": {
+    "types": [
+      "height",
+      "race",
+      "educational_attainment",
+      "demonym",
+      "marital_status",
+      "sex"
+    ],
+    "published": false
+  },
+  "Dessert": {
+    "types": [
+      "topping",
+      "flavor",
+      "variety"
+    ],
+    "published": false
+  },
+  "Device": {
+    "types": [
+      "manufacturer",
+      "platform",
+      "build_number",
+      "serial",
+      "version",
+      "model_name"
+    ],
+    "published": false
+  },
+  "DrivingLicence": {
+    "types": [
+      "british_driving_licence",
+      "northern_irish_driving_licence",
+      "uk_driving_licence",
+      "usa_driving_licence"
+    ],
+    "published": false
+  },
+  "Drone": {
+    "types": [
+      "weight",
+      "max_ascent_speed",
+      "max_descent_speed",
+      "flight_time",
+      "max_altitude",
+      "max_flight_distance",
+      "max_speed",
+      "max_wind_resistance",
+      "max_angular_velocity",
+      "max_tilt_angle",
+      "name",
+      "operating_temperature",
+      "battery_capacity",
+      "battery_type",
+      "battery_weight",
+      "battery_voltage",
+      "charging_temperature",
+      "iso",
+      "max_resolution",
+      "max_charging_power",
+      "photo_format",
+      "video_format",
+      "shutter_speed_range",
+      "max_shutter_speed",
+      "min_shutter_speed"
+    ],
+    "published": false
+  },
+  "Educator": {
+    "types": [
+      "university",
+      "course",
+      "course_name",
+      "secondary_school",
+      "primary_school",
+      "campus",
+      "subject",
+      "degree"
+    ],
+    "published": false
+  },
+  "ElectricalComponents": {
+    "types": [
+      "active",
+      "passive",
+      "electromechanical"
+    ],
+    "published": false
+  },
+  "Emotion": {
+    "types": [
+      "noun",
+      "adjective"
+    ],
+    "published": false
+  },
+  "Esport": {
+    "types": [
+      "league",
+      "game",
+      "event",
+      "player",
+      "team"
+    ],
+    "published": false
+  },
+  "File": {
+    "types": [
+      "file_name",
+      "mime_type",
+      "dir",
+      "extension"
+    ],
+    "published": false
+  },
+  "Finance": {
+    "types": [
+      "vat_number",
+      "vat_number_keys",
+      "ticker",
+      "credit_card",
+      "stock_market",
+      "condominium_fiscal_code"
+    ],
+    "published": false
+  },
+  "Food": {
+    "types": [
+      "allergen",
+      "dish",
+      "description",
+      "ingredient",
+      "fruits",
+      "vegetables",
+      "spice",
+      "measurement",
+      "metric_measurement",
+      "ethnic_category"
+    ],
+    "published": false
+  },
+  "FunnyName": {
+    "types": [
+      "name",
+      "four_word_name",
+      "name_with_initial",
+      "two_word_name",
+      "three_word_name"
+    ],
+    "published": true
+  },
+  "Game": {
+    "types": [
+      "platform",
+      "genre",
+      "title"
+    ],
+    "published": false
+  },
+  "Gender": {
+    "types": [
+      "binary_type",
+      "short_binary_type",
+      "type"
+    ],
+    "published": true
+  },
+  "GreekPhilosophers": {
+    "types": [
+      "quote",
+      "name"
+    ],
+    "published": false
+  },
+  "HTML": {
+    "types": [
+      "paragraph",
+      "link",
+      "heading",
+      "emphasis",
+      "ordered_list",
+      "unordered_list",
+      "script",
+      "table",
+      "element",
+      "sandwich",
+      "code",
+      "random"
+    ],
+    "published": false
+  },
+  "Hacker": {
+    "types": [
+      "abbreviation",
+      "say_something_smart",
+      "ingverb",
+      "noun",
+      "adjective",
+      "verb",
+      "phrases"
+    ],
+    "published": false
+  },
+  "Hipster": {
+    "types": [
+      "paragraphs",
+      "paragraph",
+      "word",
+      "paragraph_by_chars",
+      "sentence",
+      "words",
+      "sentences"
+    ],
+    "published": true
+  },
+  "Hobby": {
+    "types": [
+      "activity"
+    ],
+    "published": false
+  },
+  "House": {
+    "types": [
+      "furniture",
+      "room"
+    ],
+    "published": false
+  },
+  "IDNumber": {
+    "types": [
+      "french_insee_number",
+      "valid",
+      "invalid",
+      "ssn_valid",
+      "spanish_citizen_number",
+      "spanish_foreign_citizen_number",
+      "valid_south_african_id_number",
+      "south_african_id_number",
+      "invalid_south_african_id_number",
+      "brazilian_citizen_number",
+      "brazilian_cpf",
+      "brazilian_id",
+      "brazilian_rg",
+      "chilean_id",
+      "croatian_id",
+      "danish_id_number"
+    ],
+    "published": false
+  },
+  "IndustrySegments": {
+    "types": [
+      "industry",
+      "super_sector",
+      "sector",
+      "sub_sector"
+    ],
+    "published": false
+  },
+  "Internet": {
+    "types": [
+      "bot_user_agent",
+      "uuid",
+      "_deprecated_free_email",
+      "_deprecated_safe_email",
+      "fix_umlauts",
+      "user_name",
+      "slug",
+      "username",
+      "email",
+      "domain_name",
+      "free_email",
+      "safe_email",
+      "user",
+      "url",
+      "user_agent",
+      "domain_word",
+      "domain_suffix",
+      "mac_address",
+      "ip_v4_address",
+      "private_ip_v4_address",
+      "public_ip_v4_address",
+      "reserved_net_checker",
+      "private_nets_regex",
+      "password",
+      "private_net_checker",
+      "reserved_nets_regex",
+      "ip_v4_cidr",
+      "ip_v6_address",
+      "ip_v6_cidr",
+      "device_token",
+      "base64"
+    ],
+    "published": false
+  },
+  "Invoice": {
+    "types": [
+      "reference",
+      "amount_between",
+      "creditor_reference"
+    ],
+    "published": false
+  },
+  "Job": {
+    "types": [
+      "key_skill",
+      "position",
+      "field",
+      "title"
+    ],
+    "published": true
+  },
+  "Json": {
+    "types": [
+      "shallow_json",
+      "add_depth_to_json"
+    ],
+    "published": false
+  },
+  "Kpop": {
+    "types": [
+      "solo",
+      "i_groups",
+      "ii_groups",
+      "iii_groups",
+      "girl_groups",
+      "boy_bands"
+    ],
+    "published": false
+  },
+  "Lorem": {
+    "types": [
+      "paragraphs",
+      "character",
+      "paragraph_by_chars",
+      "paragraph",
+      "sentence",
+      "question",
+      "multibyte",
+      "questions",
+      "word",
+      "characters",
+      "words",
+      "sentences"
+    ],
+    "published": false
+  },
+  "LoremFlickr": {
+    "types": [
+      "grayscale_image",
+      "pixelated_image",
+      "colorized_image",
+      "image"
+    ],
+    "published": false
+  },
+  "Markdown": {
+    "types": [
+      "headers",
+      "sandwich",
+      "emphasis",
+      "ordered_list",
+      "unordered_list",
+      "inline_code",
+      "block_code",
+      "table",
+      "random"
+    ],
+    "published": false
+  },
+  "Marketing": {
+    "types": [
+      "buzzwords"
+    ],
+    "published": false
+  },
+  "Measurement": {
+    "types": [
+      "volume",
+      "metric_height",
+      "metric_length",
+      "metric_volume",
+      "weight",
+      "metric_weight",
+      "height",
+      "length"
+    ],
+    "published": false
+  },
+  "Military": {
+    "types": [
+      "army_rank",
+      "marines_rank",
+      "navy_rank",
+      "air_force_rank",
+      "space_force_rank",
+      "coast_guard_rank",
+      "dod_paygrade"
+    ],
+    "published": false
+  },
+  "Mountain": {
+    "types": [
+      "range",
+      "name"
+    ],
+    "published": false
+  },
+  "Movie": {
+    "types": [
+      "quote",
+      "title"
+    ],
+    "published": true
+  },
+  "Music": {
+    "types": [
+      "key",
+      "key_variants",
+      "chord",
+      "chord_types",
+      "key_types",
+      "band",
+      "album",
+      "genre",
+      "mambo_no_5",
+      "keys",
+      "instrument"
+    ],
+    "published": true
+  },
+  "Name": {
+    "types": [
+      "first_name",
+      "name",
+      "last_name",
+      "initials",
+      "name_with_middle",
+      "male_first_name",
+      "first_name_men",
+      "masculine_name",
+      "female_first_name",
+      "first_name_women",
+      "feminine_name",
+      "neutral_first_name",
+      "first_name_neutral",
+      "gender_neutral_first_name",
+      "middle_name",
+      "suffix",
+      "prefix"
+    ],
+    "published": true
+  },
+  "Nation": {
+    "types": [
+      "capital_city",
+      "national_sport",
+      "language",
+      "nationality",
+      "flag"
+    ],
+    "published": false
+  },
+  "NationalHealthService": {
+    "types": [
+      "british_number",
+      "check_digit"
+    ],
+    "published": false
+  },
+  "NatoPhoneticAlphabet": {
+    "types": [
+      "code_word"
+    ],
+    "published": false
+  },
+  "Number": {
+    "types": [
+      "decimal_part",
+      "between",
+      "hexadecimal",
+      "leading_zero_number",
+      "within",
+      "number",
+      "decimal",
+      "non_zero_digit",
+      "digit",
+      "positive",
+      "negative",
+      "binary",
+      "normal"
+    ],
+    "published": false
+  },
+  "Omniauth": {
+    "types": [
+      "facebook",
+      "twitter",
+      "linkedin",
+      "github",
+      "apple",
+      "auth0",
+      "google"
+    ],
+    "published": false
+  },
+  "PhoneNumber": {
+    "types": [
+      "extension",
+      "country_code",
+      "phone_number_with_country_code",
+      "cell_phone_with_country_code",
+      "cell_phone_in_e164",
+      "area_code",
+      "exchange_code",
+      "cell_phone",
+      "subscriber_number",
+      "phone_number"
+    ],
+    "published": false
+  },
+  "Placeholdit": {
+    "types": [
+      "image"
+    ],
+    "published": false
+  },
+  "ProgrammingLanguage": {
+    "types": [
+      "name",
+      "creator"
+    ],
+    "published": false
+  },
+  "Quote": {
+    "types": [
+      "mitch_hedberg",
+      "famous_last_words",
+      "jack_handey",
+      "matz",
+      "most_interesting_man_in_the_world",
+      "robin",
+      "singular_siegler",
+      "yoda",
+      "fortune_cookie"
+    ],
+    "published": false
+  },
+  "Relationship": {
+    "types": [
+      "sibling",
+      "familial",
+      "parent",
+      "in_law",
+      "spouse"
+    ],
+    "published": false
+  },
+  "Restaurant": {
+    "types": [
+      "name",
+      "type",
+      "description",
+      "review"
+    ],
+    "published": false
+  },
+  "Science": {
+    "types": [
+      "scientist",
+      "tool",
+      "element",
+      "modifier",
+      "science",
+      "element_symbol",
+      "element_state",
+      "element_subcategory"
+    ],
+    "published": false
+  },
+  "Show": {
+    "types": [
+      "play",
+      "adult_musical",
+      "kids_musical"
+    ],
+    "published": false
+  },
+  "SlackEmoji": {
+    "types": [
+      "people",
+      "nature",
+      "food_and_drink",
+      "celebration",
+      "travel_and_places",
+      "objects_and_symbols",
+      "emoji",
+      "custom",
+      "activity"
+    ],
+    "published": false
+  },
+  "Source": {
+    "types": [
+      "print_1_to_10",
+      "hello_world",
+      "print"
+    ],
+    "published": false
+  },
+  "SouthAfrica": {
+    "types": [
+      "pty_ltd_registration_number",
+      "close_corporation_registration_number",
+      "listed_company_registration_number",
+      "trust_registration_number",
+      "cell_phone",
+      "id_number",
+      "vat_number",
+      "valid_id_number",
+      "invalid_id_number",
+      "phone_number"
+    ],
+    "published": false
+  },
+  "Space": {
+    "types": [
+      "planet",
+      "company",
+      "moon",
+      "galaxy",
+      "nebula",
+      "star_cluster",
+      "constellation",
+      "agency",
+      "agency_abv",
+      "nasa_space_craft",
+      "distance_measurement",
+      "star",
+      "meteorite",
+      "launch_vehicle"
+    ],
+    "published": false
+  },
+  "Sport": {
+    "types": [
+      "summer_paralympics_sport",
+      "winter_paralympics_sport",
+      "unusual_sport",
+      "ancient_olympics_sport",
+      "sport",
+      "summer_olympics_sport",
+      "winter_olympics_sport"
+    ],
+    "published": false
+  },
+  "String": {
+    "types": [
+      "random"
+    ],
+    "published": false
+  },
+  "Stripe": {
+    "types": [
+      "valid_token",
+      "invalid_card",
+      "month",
+      "year",
+      "valid_card",
+      "ccv"
+    ],
+    "published": false
+  },
+  "Subscription": {
+    "types": [
+      "payment_method",
+      "subscription_term",
+      "payment_term",
+      "status",
+      "plan"
+    ],
+    "published": false
+  },
+  "Superhero": {
+    "types": [
+      "power",
+      "name",
+      "suffix",
+      "descriptor",
+      "prefix"
+    ],
+    "published": false
+  },
+  "Tea": {
+    "types": [
+      "type",
+      "variety"
+    ],
+    "published": false
+  },
+  "Team": {
+    "types": [
+      "mascot",
+      "name",
+      "creature",
+      "state",
+      "sport"
+    ],
+    "published": false
+  },
+  "Time": {
+    "types": [
+      "between_dates",
+      "forward",
+      "between",
+      "backward"
+    ],
+    "published": false
+  },
+  "Twitter": {
+    "types": [
+      "status",
+      "screen_name",
+      "user"
+    ],
+    "published": false
+  },
+  "Types": {
+    "types": [
+      "random_type",
+      "character",
+      "complex_rb_hash",
+      "rb_array",
+      "random_complex_type",
+      "rb_string",
+      "rb_integer",
+      "rb_hash"
+    ],
+    "published": false
+  },
+  "UniqueGenerator": {
+    "types": [
+      "marked_unique",
+      "clear"
+    ],
+    "published": false
+  },
+  "University": {
+    "types": [
+      "name",
+      "suffix",
+      "prefix",
+      "greek_organization",
+      "greek_alphabet"
+    ],
+    "published": false
+  },
+  "Vehicle": {
+    "types": [
+      "model",
+      "make",
+      "year",
+      "style",
+      "vin",
+      "manufacture",
+      "make_and_model",
+      "color",
+      "transmission",
+      "drive_type",
+      "fuel_type",
+      "engine_size",
+      "car_options",
+      "standard_specs",
+      "doors",
+      "door_count",
+      "mileage",
+      "kilometrage",
+      "license_plate",
+      "singapore_license_plate",
+      "car_type",
+      "version",
+      "engine"
+    ],
+    "published": false
+  },
+  "Verb": {
+    "types": [
+      "simple_present",
+      "ing_form",
+      "past",
+      "past_participle",
+      "base"
+    ],
+    "published": false
+  },
+  "VulnerabilityIdentifier": {
+    "types": [
+      "cve"
+    ],
+    "published": false
+  },
+  "WorldCup": {
+    "types": [
+      "city",
+      "stadium",
+      "group",
+      "roster",
+      "team"
+    ],
+    "published": false
+  }
+}            
+            
+          
+               
+                
+                  
+                     
+                        
+                      
+                
+               
+               
+                
+               
+                    
+                  
+           
+                  
+                 
+                      
+                           
+                        
+            
+               
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+            
+            
+          
+               
+                
+                  
+                     
+                        
+                      
+                
+               
+               
+                
+               
+                    
+                  
+           
+                  
+                 
+                      
+                           
+                        
+            
+               
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
+  
+    
+  
+  
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+
+
