@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   post "sign_in", to: "sessions#create"
   get  "sign_up", to: "registrations#new"
   post "sign_up", to: "registrations#create"
+  get "account", to: "home#index"
   resources :sessions, only: [:index, :show, :destroy]
   resource  :password, only: [:edit, :update]
   namespace :identity do
@@ -10,8 +11,7 @@ Rails.application.routes.draw do
     resource :email_verification, only: [:show, :create]
     resource :password_reset,     only: [:new, :edit, :create, :update]
   end
-  root "home#index"
-  # root "static_pages#home"
+  root "static_pages#home"
 
   resources :fake_sets
   resources :fake_set_types, only: [], param: :index do
