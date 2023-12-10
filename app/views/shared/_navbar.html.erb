@@ -3,19 +3,21 @@
     <%= link_to "Fake It Up", root_path, class: "btn btn-ghost normal-case text-xl" %>
   </div>
   <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
-      <li><%= link_to "My Fake Sets", fake_sets_path %></li>
-      <li><%= link_to "Account", account_path %></li>
-    </ul>
+    <% if Current.session %>
+      <ul class="menu menu-horizontal px-1">
+        <li><%= link_to "My Fake Sets", fake_sets_path %></li>
+        <li><%= link_to "Account", account_path %></li>
+      </ul>
+    <% end %>
   </div>
   <div class="navbar-end">
     <div class="hidden lg:flex items-center">
       <% if Current.session %>
         <div class="badge badge-outline mr-2"><%= Current.user.email %></div>
-        <%= button_to "Log out", Current.session, method: :delete, class: "btn" %>
+        <%= button_to "Log out", Current.session, method: :delete, class: "btn rounded" %>
       <% else %>
-        <%= link_to "Sign in", sign_in_path, class: "btn mr-2" %>
-        <%= link_to "Sign up", sign_up_path, class: "btn btn-neutral" %>
+        <%= link_to "Sign in", sign_in_path, class: "btn rounded mr-2" %>
+        <%= link_to "Sign up", sign_up_path, class: "btn btn-neutral rounded" %>
       <% end %>
     </div>
     <div class="dropdown dropdown-end">
@@ -29,8 +31,8 @@
           <li><%= link_to "Account", account_path %></li>
           <li><%= button_to "Log out", Current.session, method: :delete %></li>
         <% else %>
-          <li><%= link_to "Sign in", sign_in_path %></li>
-          <li><%= link_to "Sign up", sign_up_path %></li>
+          <li><%= link_to "Sign in", sign_in_path, class: "btn btn-sm rounded mb-2" %></li>
+          <li><%= link_to "Sign up", sign_up_path, class: "btn btn-sm btn-neutral rounded" %></li>
         <% end %>
       </ul>
     </div>

@@ -1,4 +1,73 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<section class="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2">
+  <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+    <div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+      <h2 class="text-2xl font-bold md:text-3xl">
+        Generate fake data with Fake It Up
+      </h2>
 
-<%= link_to "Home", root_path, class: "btn" %>
+      <p class="hidden text-gray-500 md:mt-4 md:block">
+      Fake it up is an easy to use tool to generate fake data. There are many fake
+      data types to choose from. To get started create a free account and enjoy.
+      </p>
+
+      <% if !Current.session %>
+        <div class="mt-4 md:mt-8">
+          <%= link_to "Get Started Today", sign_up_path,
+            class: "btn btn-success btn-sm btn-wide rounded"
+          %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <img
+    alt="Student"
+    src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+    class="h-56 w-full object-cover sm:h-full"
+  />
+</section>
+
+<section class="bg-gray-900 text-white sm:grid sm:grid-cols-2">
+  <div class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+    <div class="max-w-xl">
+      <h2 class="text-3xl font-bold sm:text-4xl">Step 1:</h2>
+
+      <p class="mt-4 text-gray-300">
+        Sign up for free
+      </p>
+    </div>
+  </div>
+  <div>
+    image goes here
+  </div>
+</section>
+
+<section class="bg-gray-50 sm:grid sm:grid-cols-2">
+  <div>
+    image goes here
+  </div>
+  <div class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+    <div class="max-w-xl">
+      <h2 class="text-3xl font-bold sm:text-4xl">Step 2:</h2>
+
+      <p class="mt-4 text-gray-500">
+        Create Fake data set. The JSON and CSV will automatically be created
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gray-900 text-white sm:grid sm:grid-cols-2">
+  <div class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+    <div class="max-w-xl">
+      <h2 class="text-3xl font-bold sm:text-4xl">Step 3:</h2>
+
+      <p class="mt-4 text-gray-300">
+        Copy the generated fake data.
+      </p>
+    </div>
+  </div>
+  <div>
+    image goes here
+  </div>
+</section>
