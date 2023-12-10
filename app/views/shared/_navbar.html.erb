@@ -1,27 +1,38 @@
 <div class="navbar bg-base-100">
   <div class="navbar-start">
-    <div class="dropdown">
-      <label tabindex="0" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-      </label>
-      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-        <li><%= link_to "My Fake Sets", fake_sets_path %></li>
-      </ul>
-    </div>
     <%= link_to "Fake It Up", root_path, class: "btn btn-ghost normal-case text-xl" %>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
       <li><%= link_to "My Fake Sets", fake_sets_path %></li>
+      <li><%= link_to "Account", account_path %></li>
     </ul>
   </div>
   <div class="navbar-end">
-    <div class="badge badge-outline mr-2"><%= Current.user.email %></div>
-    <% if Current.session %>
-      <%= button_to "Log out", Current.session, method: :delete, class: "btn" %>
-    <% else %>
-      <%= link_to "Sign in", sign_in_path, class: "btn mr-2" %>
-      <%= link_to "Sign up", sign_up_path, class: "btn btn-neutral" %>
-    <% end %>
+    <div class="hidden lg:flex items-center">
+      <% if Current.session %>
+        <div class="badge badge-outline mr-2"><%= Current.user.email %></div>
+        <%= button_to "Log out", Current.session, method: :delete, class: "btn" %>
+      <% else %>
+        <%= link_to "Sign in", sign_in_path, class: "btn mr-2" %>
+        <%= link_to "Sign up", sign_up_path, class: "btn btn-neutral" %>
+      <% end %>
+    </div>
+    <div class="dropdown dropdown-end">
+      <label tabindex="0" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </label>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <% if Current.session %>
+          <div class="badge badge-outline m-2"><%= Current.user.email %></div>
+          <li><%= link_to "My Fake Sets", fake_sets_path %></li>
+          <li><%= link_to "Account", account_path %></li>
+          <li><%= button_to "Log out", Current.session, method: :delete %></li>
+        <% else %>
+          <li><%= link_to "Sign in", sign_in_path %></li>
+          <li><%= link_to "Sign up", sign_up_path %></li>
+        <% end %>
+      </ul>
+    </div>
   </div>
 </div>
