@@ -37,5 +37,6 @@ test:
 # `LITESTACK_DATA_PATH` environment variable.
 production:
   <<: *default
-  database: <%= Litesupport.root("production").join("data.sqlite3") %>
+  database: sqlite:///home/deploy/fakeitup/shared/production.sqlite3
+  # database: <%= Litesupport.root("production").join("data.sqlite3") %>
 
