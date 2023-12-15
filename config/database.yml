@@ -38,6 +38,6 @@ test:
 production:
   <<: *default
   database: <%= Litesupport.root("production").join("data.sqlite3") %>
-  # Had to add LITESTACK_DATA_PATH=sqlite:///home/deploy/fakeitup/shared/
+  # Had to add LITESTACK_DATA_PATH=///home/deploy/fakeitup/shared/
   # To the Hatchbox Environment Variables to get to work.
 
