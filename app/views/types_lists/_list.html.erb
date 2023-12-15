@@ -6,26 +6,40 @@
         <button class="btn btn-sm btn-circle btn-outline fixed">✕</button>
       </form>
     </div>
-    <p class="py-4">Press ESC key or click the button below to close</p>
-    <div>
-      Put a Search box here
-    </div>
-    <div class="prose w-full grid grid-cols-3 gap-4 mx-auto" onclick="my_modal_types.close()">
-      <% types_list.each do |type| %>
-        <div>
-          <dl>
-            <dt><%= type.parent %></dt>
-            <% type.type_generators.each do |stype| %>
-              <dd
-                class="bg-base-200 rounded-sm hover:bg-base-300 hover:cursor-pointer hover:font-medium"
-                id='<%= "#{type.parent}-#{stype}" %>'
-                data-action="click->list#selectType click->form#submitForm">
-                <%= stype.titleize %>
-              </dd>
-            <% end %>
-          </dl>
+    <div id="search" class="px-10">
+      <%= form_with(url: types_lists_path, method: :get,
+                    class: "flex justify-end",
+                    data: { turbo_frame: "types_list",
+                            controller: "form",
+                            form_target: "search"}) do |f| %>
+        <div class="form-control w-full max-w-xs my-4">
+          <%= f.search_field :type ,
+                placeholder: 'Search type...',
+                value: params[:type],
+                class: "input input-bordered w-full max-w-xs",
+                data: { action: "input->form#submitSearch" }%>
         </div>
       <% end %>
+      <div class="divider"></div>
     </div>
+    <%= turbo_frame_tag "types_list" do %>
+      <div class="prose w-full grid grid-cols-3 gap-4 mx-auto" onclick="my_modal_types.close()">
+          <% types_list.each do |type| %>
+            <div>
+              <dl>
+                <dt><%= type.parent %></dt>
+                <% type.type_generators.each do |stype| %>
+                  <dd
+                    class="bg-base-200 rounded-sm hover:bg-base-300 hover:cursor-pointer hover:font-medium"
+                    id='<%= "#{type.parent}-#{stype}" %>'
+                    data-action="click->list#selectType click->form#submitForm">
+                    <%= stype.titleize %>
+                  </dd>
+                <% end %>
+              </dl>
+            </div>
+          <% end %>
+      </div>
+    <% end %>
   </div>
 </dialog>
