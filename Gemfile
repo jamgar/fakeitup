@@ -78,3 +78,5 @@ gem "authentication-zero", "~> 3.0"
 gem "bcrypt", "~> 3.1.7"
 
 gem "litestack", "~> 0.4.2"
+
+gem "postmark-rails", "~> 0.22.1"
