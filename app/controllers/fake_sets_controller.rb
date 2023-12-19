@@ -55,7 +55,7 @@ class FakeSetsController < ApplicationController
   private
 
   def set_fake_set
-    @fake_set = FakeSet.find(params[:id])
+    @fake_set = current_user.fake_sets.find(params[:id])
   end
 
   def set_types_list
