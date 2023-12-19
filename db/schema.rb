@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_12_17_153906) do
+ActiveRecord::Schema[7.1].define(version: 2023_12_18_185737) do
   create_table "fake_set_types", force: :cascade do |t|
     t.string "parent"
     t.string "type_generator"
@@ -25,6 +25,8 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_17_153906) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_fake_sets_on_user_id"
   end
 
   create_table "sessions", force: :cascade do |t|
@@ -80,5 +82,6 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_17_153906) do
   end
 
   add_foreign_key "fake_set_types", "fake_sets"
+  add_foreign_key "fake_sets", "users"
   add_foreign_key "sessions", "users"
 end

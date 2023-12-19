@@ -3,7 +3,7 @@ class FakeSetsController < ApplicationController
   before_action :set_types_list, only: %i[ new create edit update ]
 
   def index
-    @fake_sets = FakeSet.all
+    @fake_sets = current_user.fake_sets.all
   end
 
   def show
@@ -15,6 +15,7 @@ class FakeSetsController < ApplicationController
 
   def create
     @fake_set = FakeSet.new(fake_set_params)
+    @fake_set.user = current_user
 
     respond_to do |format|
       if @fake_set.save

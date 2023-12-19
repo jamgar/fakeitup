@@ -1,4 +1,5 @@
 class FakeSet < ApplicationRecord
+  belongs_to :user
   has_many :fake_set_types, dependent: :destroy
 
   validates :name, presence: true
