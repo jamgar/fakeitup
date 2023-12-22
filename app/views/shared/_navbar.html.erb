@@ -16,7 +16,7 @@
         <div class="badge badge-outline mr-2"><%= Current.user.email %></div>
         <%= button_to "Log out", Current.session, method: :delete, class: "btn rounded" %>
       <% else %>
-        <%= link_to "Sign in", sign_in_path, class: "btn rounded mr-2" %>
+        <%= link_to "Log in", sign_in_path, class: "btn rounded mr-2" %>
         <%= link_to "Sign up", sign_up_path, class: "btn btn-neutral rounded" %>
       <% end %>
     </div>
@@ -31,7 +31,7 @@
           <li><%= link_to "Account", account_path %></li>
           <li><%= button_to "Log out", Current.session, method: :delete %></li>
         <% else %>
-          <li><%= link_to "Sign in", sign_in_path, class: "btn btn-sm rounded mb-2" %></li>
+          <li><%= link_to "Log in", sign_in_path, class: "btn btn-sm rounded mb-2" %></li>
           <li><%= link_to "Sign up", sign_up_path, class: "btn btn-sm btn-neutral rounded" %></li>
         <% end %>
       </ul>

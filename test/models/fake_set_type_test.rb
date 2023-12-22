@@ -1,6 +1,6 @@
 require "test_helper"
 
-class FakeSetItemTest < ActiveSupport::TestCase
+class FakeSetTypeTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

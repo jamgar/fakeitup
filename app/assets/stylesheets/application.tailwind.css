@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.notice {
+  @apply bg-green-200 text-green-900;
+}
+.alert {
+  @apply bg-red-300 text-red-900;
+}

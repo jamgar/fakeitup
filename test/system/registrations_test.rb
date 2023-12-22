@@ -7,8 +7,8 @@ class RegistrationsTest < ApplicationSystemTestCase
     fill_in "Email", with: "lazaronixon@hey.com"
     fill_in "Password", with: "Secret6*4*2*"
     fill_in "Password confirmation", with: "Secret6*4*2*"
-    click_on "Sign up"
+    click_on "Create an account"
 
-    assert_text "Welcome! You have signed up successfully"
+    assert_text "My Fake Sets"
   end
 end

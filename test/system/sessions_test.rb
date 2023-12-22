@@ -5,13 +5,6 @@ class SessionsTest < ApplicationSystemTestCase
     @user = users(:lazaro_nixon)
   end
 
-  test "visiting the index" do
-    sign_in_as @user
-
-    click_on "Devices & Sessions"
-    assert_selector "h1", text: "Sessions"
-  end
-
   test "signing in" do
     visit sign_in_url
     fill_in "Email", with: @user.email

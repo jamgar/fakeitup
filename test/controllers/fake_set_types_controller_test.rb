@@ -1,6 +1,6 @@
 require "test_helper"
 
-class FakeSetItemsControllerTest < ActionDispatch::IntegrationTest
+class FakeSetTypesControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

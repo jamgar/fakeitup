@@ -17,7 +17,6 @@ default: &default
   adapter: litedb
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   idle_timeout: 0
-  metrics: true
 
 development:
   <<: *default

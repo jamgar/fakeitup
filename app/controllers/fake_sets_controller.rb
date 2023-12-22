@@ -19,8 +19,8 @@ class FakeSetsController < ApplicationController
 
     respond_to do |format|
       if @fake_set.save
-        format.html { redirect_to edit_fake_set_path(@fake_set), 
-                      notice: "Fake set successfully created."}
+        format.html { redirect_to edit_fake_set_path(@fake_set) }
+        flash[:notice] = "Fake set successfully created."
       else
         format.html { render :new, status: :unprocessable_entity } 
       end
@@ -33,8 +33,8 @@ class FakeSetsController < ApplicationController
   def update
     respond_to do |format|
       if @fake_set.update(fake_set_params)
-        format.html { redirect_to edit_fake_set_path(@fake_set), 
-                      notice: "Fake set successfully updated."}
+        format.html { redirect_to edit_fake_set_path(@fake_set) }
+        flash[:notice] = "Fake set successfully updated."
       else
         format.html { render :edit, status: :unprocessable_entity } 
       end
