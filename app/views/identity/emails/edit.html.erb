@@ -25,7 +25,7 @@
       <% end %>
 
       <div>
-        <%= form.label :email, class: "sr-only" %>
+        <%= form.label :email, "New email", class: "sr-only" %>
         <%= form.email_field :email,
           required: true,
           autocomplete: "email",
@@ -34,7 +34,7 @@
       </div>
 
       <div>
-        <%= form.label :password, "Password challenge", class: "sr-only" %>
+        <%= form.label :password_challenge, "Password challenge", class: "sr-only" %>
         <%= form.password_field :password_challenge,
           required: true,
           autocomplete: "current-password",

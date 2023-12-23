@@ -20,6 +20,7 @@ default: &default
 
 development:
   <<: *default
+  metrics: true
   database: <%= Litesupport.root("development").join("data.sqlite3") %>
 
 # Warning: The database defined as "test" will be erased and
@@ -36,6 +37,7 @@ test:
 # `LITESTACK_DATA_PATH` environment variable.
 production:
   <<: *default
+  metrics: true
   database: <%= Litesupport.root("production").join("data.sqlite3") %>
   # Had to add LITESTACK_DATA_PATH=///home/deploy/fakeitup/shared/
   # To the Hatchbox Environment Variables to get to work.
