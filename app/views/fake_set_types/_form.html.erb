@@ -5,6 +5,7 @@
 
   <div class="flex gap-2 mb-4 w-full">
     <%= form.label :type_generator,
+      id: "fake_set_fake_set_types_attributes_#{form.index}",
       class: "btn rounded flex justify-between items-center w-64 sm:w-96 overflow-x-auto",
       data: { action: "click->list#setFields", label_target: "fake_set_fake_set_types_attributes_#{form.index}" }, onclick: "my_modal_types.showModal()" do %>
       <%= form.object.type_generator ? "#{form.object.parent}: #{form.object.type_generator}" : "Click to choose a type" %> 
