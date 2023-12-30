@@ -34,12 +34,12 @@
             <div>
               <dl>
                 <dt><%= type.parent %></dt>
-                <% type.type_generators.each do |stype| %>
+                <% type.types_generators.each do |stype| %>
                   <dd
                     class="bg-base-200 rounded-sm hover:bg-base-300 hover:cursor-pointer hover:font-medium"
-                    id='<%= "#{type.parent}-#{stype}" %>'
+                    id='<%= "#{type.parent}-#{stype.name}" %>'
                     data-action="click->list#selectType click->form#submitForm">
-                    <%= stype.titleize %>
+                    <%= stype.name.titleize %>
                   </dd>
                 <% end %>
               </dl>

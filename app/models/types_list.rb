@@ -1,3 +1,3 @@
 class TypesList < ApplicationRecord
-  serialize :type_generators, coder: JSON
+  has_many :types_generators, dependent: :destroy
 end

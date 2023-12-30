@@ -27,7 +27,7 @@
       { "name": "time_zone", "arguments": [] },
       { "name": "state", "arguments": [] }
     ],
-    "published": true
+    "published": false
   },
   "Adjective": {
     "types": [
@@ -41,7 +41,7 @@
       { "name": "alphanumeric", "arguments": [] },
       { "name": "alpha", "arguments": [] }
     ],
-    "published": true
+    "published": false
   },
   "Ancient": {
     "types": [
@@ -122,7 +122,7 @@
       { "name": "alcohol", "arguments": [] },
       { "name": "blg", "arguments": [] }
     ],
-    "published": true
+    "published": false
   },
   "Blood": {
     "types": [
@@ -195,7 +195,7 @@
   },
   "ChuckNorris": {
     "types": [{ "name": "fact", "arguments": [] }],
-    "published": true
+    "published": false
   },
   "Code": {
     "types": [
@@ -218,7 +218,7 @@
       { "name": "intensifier", "arguments": [] },
       { "name": "origin", "arguments": [] }
     ],
-    "published": true
+    "published": false
   },
   "Coin": {
     "types": [
@@ -371,7 +371,7 @@
       { "name": "symbol", "arguments": [] },
       { "name": "code", "arguments": [] }
     ],
-    "published": true
+    "published": false
   },
   "Date": {
     "types": [
@@ -423,7 +423,7 @@
       { "name": "version", "arguments": [] },
       { "name": "build_number", "arguments": [] }
     ],
-    "published": true
+    "published": false
   },
   "DrivingLicence": {
     "types": [
@@ -535,7 +535,7 @@
       { "name": "vegetables", "arguments": [] },
       { "name": "spice", "arguments": [] }
     ],
-    "published": true
+    "published": false
   },
   "FunnyName": {
     "types": [
@@ -561,7 +561,7 @@
       { "name": "short_binary_type", "arguments": [] },
       { "name": "type", "arguments": [] }
     ],
-    "published": true
+    "published": false
   },
   "GreekPhilosophers": {
     "types": [
@@ -738,7 +738,7 @@
       { "name": "words", "arguments": [] },
       { "name": "word", "arguments": [] }
     ],
-    "published": true
+    "published": false
   },
   "LoremFlickr": {
     "types": [
@@ -747,7 +747,7 @@
       { "name": "colorized_image", "arguments": [] },
       { "name": "image", "arguments": [] }
     ],
-    "published": true
+    "published": false
   },
   "Markdown": {
     "types": [
@@ -842,7 +842,7 @@
       { "name": "first_name_women", "arguments": [] },
       { "name": "feminine_name", "arguments": [] }
     ],
-    "published": true
+    "published": false
   },
   "Nation": {
     "types": [
@@ -1195,4 +1195,3 @@
     "published": false
   }
 }
-
